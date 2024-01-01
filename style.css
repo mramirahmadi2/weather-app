@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  direction: rtl;
+  width: 100vw;
+  min-height: 100vh;
+  background: rgb(238, 174, 202);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+h1 {
+  text-align: center;
+}
+form {
+  width: 55vw;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.height {
+  height: 2em;
+}
+.mt-1 {
+  margin-top: 0.1em;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.day-card {
+  width: 55vw;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 2em;
+
+  border-radius: 8px;
+}
+
+.detailed-information {
+  display: none;
+  margin-top: 10px;
+}
+
+.day-card.active .detailed-information {
+  display: block;
+}
+.btn {
+  background-color: rgba(47, 106, 245, 0.6);
+  border: none;
+  color: rgb(6, 6, 6);
+  font-weight: 900;
+  cursor: pointer;
+
+}
+.btn_more {
+  background-color: rgba(245, 235, 47, 0.6);
+  color: white;
+  width: 8vw;
+  height: 3.2vh;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آب و هوای شهر شما</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+    <h1>آب و هوا</h1>
+    <form >
+        <input type="text" id="city_location" placeholder="نام شهر خود را وارد کنید" class="height" />
+        <button type="button" onclick="getWeatherByCity()" class="height mt-1 btn">دریافت آب و هوا توسط اینپوت</button>
+        <button type="button" onclick="getWeatherByLocation()" class="height mt-1 btn">دریافت آب و هوا با لوکیشن</button>
+    </form>
+    <div id="app"></div>
+
+    <script defer src="./main.js"></script>
+</body>
+</html>
